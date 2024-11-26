@@ -158,3 +158,16 @@ h6_nuevo.textContent = "HGÑOhgoiheOIGBHOIEHBOIRAHBOIRAHPOB";
 div_parrafo.appendChild(h6_nuevo);
 contenedor.appendChild(div_parrafo);
 
+
+let divHola = document.getElementById('hola');
+
+if (divHola) {
+    window.addEventListener('mousemove', function(e) {
+        let coords = `Posición del mouse - X: ${e.clientX}, Y: ${e.clientY}`;
+        
+        divHola.textContent = coords;
+    });
+} else {
+    console.error('El elemento #hola no fue encontrado en el DOM.');
+}
+
